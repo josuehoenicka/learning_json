@@ -1,3 +1,5 @@
+/*** type of objects ***/
+
 // array
 
 let list: string[] = ['Venezuela', 'Argentina', 'Brasil'];
@@ -24,3 +26,28 @@ let persona: object = {
 
 // desestructuración
 
+var obj = {
+    a: 1,
+    b: 2,
+    c: 3
+}
+console.log(obj.c); // -> 3
+
+var array = [1, 2, 3];
+console.log(array[2]); // -> [3]
+
+var arraySecond = [1, 2, 3, 5];
+var [x, y, ...rest] = arraySecond;
+console.log(rest); // -> [3, 5]
+
+function resto(first: number, second: number, ...allOthers: any) {
+    console.log(allOthers);
+}
+resto(1, 2, 3, 4, 5); // -> [3, 4, 5]
+
+/**** aserción de tipos ***/
+   
+(nombre as string).toUpperCase();
+(<string>nombre).toUpperCase();
+
+/*** funciones ***/
