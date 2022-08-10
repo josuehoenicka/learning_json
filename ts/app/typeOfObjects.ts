@@ -45,9 +45,16 @@ function resto(first: number, second: number, ...allOthers: any) {
 }
 resto(1, 2, 3, 4, 5); // -> [3, 4, 5]
 
-/**** aserción de tipos ***/
-   
-(nombre as string).toUpperCase();
-(<string>nombre).toUpperCase();
-
 /*** funciones ***/
+
+function calcularIva(productos: Producto[]):[number, number] {
+    let total = 0;
+    productos.forEach(({precio}) => {
+        total += precio;
+    });
+    return [total, total * 0.15];
+}
+
+class Producto {
+    precio: number;
+}
