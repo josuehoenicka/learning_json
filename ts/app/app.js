@@ -18,3 +18,5 @@ var Numeros;
 })(Numeros || (Numeros = {}));
 var numeroFav = Numeros.unoMasUno;
 console.log("Mi numero favorito es el " + numeroFav); // -> 2
+var firstCode = "Hola mundo :D";
+console.log(firstCode);

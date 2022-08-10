@@ -23,3 +23,6 @@ enum Numeros {
 
 let numeroFav: Numeros = Numeros.unoMasUno;
 console.log("Mi numero favorito es el " + numeroFav); // -> 2
+
+let firstCode: string = "Hola mundo :D";
+console.log(firstCode);
