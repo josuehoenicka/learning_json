@@ -1,4 +1,4 @@
-<h1 align="center">basicJSONAPI</h1>
+<h1 align="center">basicJsonapi</h1>
 <br>
 <h3 align="center">My first code lines on JSON and my first develop with an API</h3>
 <br>
